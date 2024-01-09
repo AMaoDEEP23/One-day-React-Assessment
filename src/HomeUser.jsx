@@ -1,4 +1,5 @@
 import "./user.css"
+import "./table.css"
 
 const HomeUser = (props) =>{
     const  employee = props.formEmployee 
@@ -7,16 +8,16 @@ const HomeUser = (props) =>{
         <div className="User">
             <table>
                 <tr>
-                    <th>Name</th>
-                    <th>LastName</th>
-                    <th>Position</th>
+                    <th className="th">Name</th>
+                    <th className="th">LastName</th>
+                    <th className="th">Position</th>
                 </tr>
                 {employee.map((dataForm) => {
                     return (
                     <tr>
-                        <th>{dataForm.name}</th>
-                        <th>{dataForm.lastname}</th>
-                        <th>{dataForm.position}</th>
+                        <th className="th">{dataForm.name}</th>
+                        <th className="th">{dataForm.lastname}</th>
+                        <th className="th">{dataForm.position}</th>
     
                     </tr>
                     )

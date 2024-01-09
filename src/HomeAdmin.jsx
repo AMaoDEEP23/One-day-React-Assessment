@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './Admin.css'
+import "./table.css"
 const HomeAdmin = (props) =>{
     const  employee = props.formEmployee 
     const  deleteBtn = props.deleteData
@@ -42,19 +43,19 @@ const HomeAdmin = (props) =>{
         <div>
             <table>
                 <tr>
-                    <th>Name</th>
-                    <th>LastName</th>
-                    <th>Position</th>
-                    <th>Action</th>
+                    <th className="th">Name</th>
+                    <th className="th">LastName</th>
+                    <th className="th">Position</th>
+                    <th className="th">Action</th>
                 </tr>
                 {employee.map((dataForm) => {
                     return (
                     <tr>
-                        <th>{dataForm.name}</th>
-                        <th>{dataForm.lastname}</th>
-                        <th>{dataForm.position}</th>
+                        <th className="th">{dataForm.name}</th>
+                        <th className="th">{dataForm.lastname}</th>
+                        <th className="th">{dataForm.position}</th>
                         
-                        <td><button onClick={() => deleteBtn(dataForm.id)}>Delete</button></td>
+                        <td className="th"><button onClick={() => deleteBtn(dataForm.id)}>Delete</button></td>
                     </tr>
                     )
                 })}
