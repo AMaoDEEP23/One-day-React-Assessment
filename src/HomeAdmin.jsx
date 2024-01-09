@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Admin.css'
 const HomeAdmin = (props) =>{
     const  employee = props.formEmployee 
     const  deleteBtn = props.deleteData
@@ -25,6 +25,7 @@ const HomeAdmin = (props) =>{
     
     return(
         <>
+        <div className="Admin">
         <div>
             <h2>Create User Here</h2>
             <label htmlFor="Name">Name</label>
@@ -59,6 +60,7 @@ const HomeAdmin = (props) =>{
                 })}
                
             </table>
+        </div>
         </div>
         </>
     )

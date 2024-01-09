@@ -1,8 +1,10 @@
+import "./user.css"
+
 const HomeUser = (props) =>{
     const  employee = props.formEmployee 
     console.log(employee)
     return(
-        <div>
+        <div className="User">
             <table>
                 <tr>
                     <th>Name</th>

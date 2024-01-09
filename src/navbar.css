@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    gap: 20px;
+    margin: 10px;
+    
+}
+
+.list{
+    list-style: none;
+}
+
