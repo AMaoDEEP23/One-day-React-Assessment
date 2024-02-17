@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Owner from './Owner';
 import Navbar from './Navbar';
 import Home from './Home';
+import HomeAdmin from './HomeAdmin';
 
 import {
   createBrowserRouter,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path:"/Home",
     element:<Home/>
+  },
+  {
+    path:"/HomeAdmin",
+    element:<HomeAdmin/>
   },
 ])
 
